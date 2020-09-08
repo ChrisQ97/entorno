@@ -1,1 +1,1 @@
-# entorno
+# entorno de desarrollo
