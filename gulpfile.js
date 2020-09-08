@@ -4,11 +4,17 @@ const { src, dest, series, parallel, watch } = require('gulp');
 // Importar los paquetes con los que vamos a trabajar
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+//constantes nuevas funciones
+const uglify = require('gulp-uglify');
+const minifyCSS = require('gulp-minify-css');
+const imageMin = require('gulp-imagemin')
 
 // Constantes de trabajo
 const files = {
     scssPath: 'src/scss/**/*.scss',
     htmlPath: 'dist/**/*.html',
+    jvsPath: 'src/js/**/*.js',
+    imgPath: 'src/images/**/*'
 }
 
 function helloWorldTask(result) {
@@ -31,8 +37,8 @@ function scssTask() {
  */
 function watchTask() {
     watch(
-        [files.scssPath, files.htmlPath],
-        series(scssTask, reloadTask)
+        [files.scssPath, files.htmlPath, files.jvsPath, files.imgPath],
+        series(scssTask, minifyJVSTask, imgTask, reloadTask)
     )
 }
 
@@ -52,4 +58,34 @@ function reloadTask(d) {
     d();
 }
 
+/**Compilador de archivos de scss a css
+*se pasan archivos de scss a CSS
+*se minifica el CSS producido por el SASS
+*/
+function compscssTask(done){
+    return  scr(files.jvsPath)
+    .pipe(sass())
+    .pipe(minifyCSS())
+    .pipe(dest('dist/css'));
+}
+/**
+ * funcion para poder minificar los archivos JavaScript
+ */
+function minifyJVSTask(done){
+    return src(files.jvsPath)
+    .pipe(uglify())
+    .pipe(dest('dist/js'))
+}
+/**
+ * funcion para las imagenes
+ */
+function imgTask(done){
+    return src(files.imgPath)
+    .pipe(imageMin())
+    .pipe(dest('dist/images'))
+}
+
+
+
 exports.default = series(scssTask, serveTask, watchTask);
+exports.imageTask = imgTask;

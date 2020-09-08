@@ -11,6 +11,17 @@
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
-  }
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisQ97/entorno.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChrisQ97/entorno/issues"
+  },
+  "homepage": "https://github.com/ChrisQ97/entorno#readme"
 }
