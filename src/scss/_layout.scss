@@ -1,3 +1,86 @@
-body {
-    background-color: $dark-gray;
+
+.Text-center {
+    text-align: center;
+
+}
+p {
+    color: $dark-green;
+    font-family: $styled-second-font;
+    font-size: medium;
+}
+.banner-principal{
+    height: 400px;
+    background-color: black;
+    img{
+        width: 1310px;
+        height: 400px;
+    }
+}
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#portafolio {
+    color: black;
+    background-color: $contrast-light;
+    .row {
+        margin-bottom: 25px;
+    }
+    .item-portafolio{
+        background-color: $green;       
+        p{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    img{
+        max-width: 100%;
+
+    }
+}
+#work-team{
+    background-color: white;
+    color: $green;
+    img{
+        max-width: 100%;
+        border-radius: 50%;
+    }
+}
+#clients{
+    background-color: $contrast-light;
+    color: black;
+    img{
+        max-width: 100%;
+        border-radius: 30%;
+    }
+    h2 {
+        padding-top: 15px;
+    }
+}
+#services{
+    background-color: white;
+    color: $green;
+}
+footer{
+    background-color: black;
+    padding: 30px;
+    color: green;
+    .social-links{
+        a {
+            color: black;
+            display: inline-block; 
+            background: $contrast-light;
+            border-radius: 50%;
+            text-decoration: none;
+            padding: 10px;
+            width: 21px;
+            &:hover{
+                background: black ;
+                color: $green;
+
+            }
+            
+        }
+    }
+
 }

@@ -87,5 +87,5 @@ function imgTask(done){
 
 
 
-exports.default = series(scssTask, serveTask, watchTask);
-exports.imageTask = imgTask;
+exports.default = series(scssTask, minifyJVSTask, imgTask, serveTask, watchTask, reloadTask);
+//exports.imageTask = imgTask;

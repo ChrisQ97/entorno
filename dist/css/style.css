@@ -764,58 +764,70 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
-body {
-  background-color: #e6e6e6; }
+.Text-center {
+  text-align: center; }
 
-header {
-  background-color: #17252a;
-  position: sticky;
-  top: 0;
-  z-index: 100; }
+p {
+  color: #143601;
+  font-family: "Monserrat";
+  font-size: medium; }
 
-.navbar {
-  display: block; }
-  .navbar-main {
-    list-style: none;
-    margin: 0; }
-    .navbar-main-item {
-      float: right;
-      margin-bottom: 0;
-      position: relative; }
-      .navbar-main-item a {
-        color: #feffff;
-        display: block;
-        padding: 10px 0;
-        margin-left: 50px;
-        text-decoration: none; }
-      .navbar-main-item-logo {
-        float: left; }
+.banner-principal {
+  height: 400px;
+  background-color: black; }
+  .banner-principal img {
+    width: 1310px;
+    height: 400px; }
 
-.hero {
-  background-color: #3aafa9;
-  height: 500px;
-  position: relative; }
-  .hero::after {
-    background: #feffff;
-    clip-path: polygon(0 100%, 0 0, 100% 100%);
-    height: 50px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    content: ""; }
+section {
+  padding-top: 80px;
+  padding-bottom: 80px; }
 
-.bio {
-  background-color: #feffff;
-  border-bottom: 1px solid #cccccc;
-  text-align: justify;
-  padding: 40px 0; }
+#portafolio {
+  color: black;
+  background-color: #73a942; }
+  #portafolio .row {
+    margin-bottom: 25px; }
+  #portafolio .item-portafolio {
+    background-color: #538d22; }
+    #portafolio .item-portafolio p {
+      padding-left: 15px;
+      padding-right: 15px; }
+  #portafolio img {
+    max-width: 100%; }
 
-.contact {
-  border-bottom: 1px solid #cccccc;
-  position: relative;
-  padding: 40px 0; }
+#work-team {
+  background-color: white;
+  color: #538d22; }
+  #work-team img {
+    max-width: 100%;
+    border-radius: 50%; }
+
+#clients {
+  background-color: #73a942;
+  color: black; }
+  #clients img {
+    max-width: 100%;
+    border-radius: 30%; }
+  #clients h2 {
+    padding-top: 15px; }
+
+#services {
+  background-color: white;
+  color: #538d22; }
 
 footer {
-  background-color: #17252a;
-  color: #feffff;
-  padding: 40px; }
+  background-color: black;
+  padding: 30px;
+  color: green; }
+  footer .social-links a {
+    color: black;
+    display: inline-block;
+    background: #73a942;
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 10px;
+    width: 21px; }
+    footer .social-links a:hover {
+      background: black;
+      color: #538d22; }
