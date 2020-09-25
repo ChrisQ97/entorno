@@ -826,8 +826,57 @@ footer {
     background: #73a942;
     border-radius: 50%;
     text-decoration: none;
-    padding: 10px;
-    width: 21px; }
+    padding: 5px;
+    width: 15px; }
     footer .social-links a:hover {
       background: black;
       color: #538d22; }
+
+header {
+  background-color: white;
+  background-image: url("/img/imagen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px; }
+  header .header-container {
+    background-color: blue;
+    color: white;
+    height: 100%;
+    padding: 45px;
+    position: relative;
+    width: calc(100%-50px); }
+    header .header-container .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-137px, -52px); }
+      header .header-container .header-content p {
+        margin: 0; }
+
+nav {
+  background-color: black; }
+  nav ul {
+    background-color: #143601;
+    border-bottom: 1px solid #73a942;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    text-align: center; }
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px; }
+      nav ul li a {
+        color: #538d22;
+        text-decoration: none;
+        text-transform: uppercase; }
+        nav ul li a:hover {
+          color: #73a942; }
+
+@media screen and (max-width: 425px) {
+  footer {
+    background-color: black;
+    text-align: center; } }
