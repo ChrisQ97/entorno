@@ -58,6 +58,7 @@ section{
     }
 }
 #services{
+    margin: 5px;
     background-color: white;
     color: $green;
 }
@@ -83,19 +84,34 @@ footer{
             
         }
     }
+    .footer-links {
+        text-align: right;
+
+        a {
+            color: white;
+            display: block;
+            margin: 0 8px;
+            text-decoration: none;
+            float: right;
+
+            &:hover {
+                color: $contrast-light;
+            }
+        }
+    }
 
 }
 header{
     background-color: white;
-    background-image: url('/img/imagen.jpg');
+    background-image: url('https://i2.wp.com/www.geoawesomeness.com/wp-content/uploads/2017/09/Coding-Geospatial.jpg?ssl=1');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 450px;
     .header-container{
-        background-color: blue;
+        background-color: rgba(0, 0, 0, 0.5);
         color: white;
-        height: 100%;
+        height: calc(100% - 90px);
         padding: 45px;
         position: relative;
         width: calc(100%-50px);
@@ -103,9 +119,16 @@ header{
             position: absolute;
             top: 50%;
             left: 50%;
+            color: white;
             transform: translate(-137px, -52px);
             p{
                 margin: 0;
+                color: white;
+                font-family: $styled-font;
+            }
+            h1{
+                color: white;
+                font-family: $styled-second-font;
             }
         }
 
@@ -114,7 +137,7 @@ header{
 nav {
     background-color: black;
     ul{
-        background-color: $dark-green;
+        background-color: black;
         border-bottom: 1px solid $contrast-light;
         position: fixed;
         margin: 0;
@@ -144,5 +167,8 @@ nav {
     footer{
         background-color: black;
         text-align: center;
+    }
+    div{
+        margin: 20px 0;
     }
 }

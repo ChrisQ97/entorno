@@ -813,6 +813,7 @@ section {
     padding-top: 15px; }
 
 #services {
+  margin: 5px;
   background-color: white;
   color: #538d22; }
 
@@ -831,18 +832,28 @@ footer {
     footer .social-links a:hover {
       background: black;
       color: #538d22; }
+  footer .footer-links {
+    text-align: right; }
+    footer .footer-links a {
+      color: white;
+      display: block;
+      margin: 0 8px;
+      text-decoration: none;
+      float: right; }
+      footer .footer-links a:hover {
+        color: #73a942; }
 
 header {
   background-color: white;
-  background-image: url("/img/imagen.jpg");
+  background-image: url("https://i2.wp.com/www.geoawesomeness.com/wp-content/uploads/2017/09/Coding-Geospatial.jpg?ssl=1");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px; }
+  height: 450px; }
   header .header-container {
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    height: 100%;
+    height: calc(100% - 90px);
     padding: 45px;
     position: relative;
     width: calc(100%-50px); }
@@ -850,14 +861,20 @@ header {
       position: absolute;
       top: 50%;
       left: 50%;
+      color: white;
       transform: translate(-137px, -52px); }
       header .header-container .header-content p {
-        margin: 0; }
+        margin: 0;
+        color: white;
+        font-family: "Oswald", cursive; }
+      header .header-container .header-content h1 {
+        color: white;
+        font-family: "Monserrat"; }
 
 nav {
   background-color: black; }
   nav ul {
-    background-color: #143601;
+    background-color: black;
     border-bottom: 1px solid #73a942;
     position: fixed;
     margin: 0;
@@ -879,4 +896,6 @@ nav {
 @media screen and (max-width: 425px) {
   footer {
     background-color: black;
-    text-align: center; } }
+    text-align: center; }
+  div {
+    margin: 20px 0; } }
